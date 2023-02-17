@@ -21,4 +21,13 @@ or combine both in single command
 RUN Docker with detached mode and port (publish) mapping
 
 
-**docker run -d -p 8080:8080 node-docker-first:0.0.1**
+**docker run --name node-docker-first-qa  -d -p 8080:8080 node-docker-first:0.0.1**
+
+
+Start and stop the container once its run
+**docker container start node-docker-first-qa**
+
+
+Get into the container in putty style
+
+**docker exec -it node-docker-first-qa sh**
