@@ -1,5 +1,6 @@
-const express = require('express');
-const config = require('config');
+import express from 'express';
+//const express = require('express');
+import config from 'config';
 const app = express();
 console.log(`Starting app with env : ${process.env.NODE_ENV}`);
 const port = config.get('port');
